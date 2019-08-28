@@ -35,6 +35,10 @@ The line can be split to following parts,
 | {POSTAMBLE_STR} | \u001B[0m |
 | {A string} | admin |
 
-Convert the `{BASE64_STR}` to bytes, trim the first `40` bytes (https://github.com/LarrysGIT/Extract-Jenkins-Raw-Log/issues/1), name as `.gz`.
+ - Convert the `{BASE64_STR}` to bytes
+ 
+ - trim the first `40` bytes (https://github.com/LarrysGIT/Extract-Jenkins-Raw-Log/issues/1)
+ 
+ - out put to a `.gz` file, or stream whatever preferred. use `gzip` method to extract the file
 
 The extracted file, `file` command tells me it's `Java serialization data, version 5`, surely you can see plain text from it.
