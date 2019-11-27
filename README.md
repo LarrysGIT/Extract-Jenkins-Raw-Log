@@ -37,8 +37,25 @@ The line can be split to following parts,
 
  - Convert the `{BASE64_STR}` to bytes
  
- - trim the first `40` bytes (https://github.com/LarrysGIT/Extract-Jenkins-Raw-Log/issues/1)
+ - Trim the first `40` bytes (https://github.com/LarrysGIT/Extract-Jenkins-Raw-Log/issues/1)
  
- - out put to a `.gz` file, or stream whatever preferred. use `gzip` method to extract the file
+ - Output to a `.gz` file, or stream whatever preferred. use `gzip` method to extract
 
 The extracted file, `file` command tells me it's `Java serialization data, version 5`, surely you can see plain text from it.
+
+#### `Samplelog`
+A sample of log file copied from my local installed Jenkins
+
+#### `Decode-JenkinsRawLog.ps1`
+An implementation of powershell
+
+```
+#> & .\Decode-JenkinsRawLog.ps1
+```
+
+#### `Decode-JenkinsRawLog.py`
+An implementation of python
+
+```
+#> py Decode-JenkinsRawLog.py
+```
