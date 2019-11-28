@@ -37,7 +37,7 @@ The line can be split to following parts,
 
  - Convert the `{BASE64_STR}` to bytes
  
- - Trim the first `40` bytes (#1)
+ - Trim the first `40` bytes (https://github.com/LarrysGIT/Extract-Jenkins-Raw-Log/issues/1)
  
  - Output to a `.gz` file, or stream whatever preferred. use `gzip` method to extract
 
