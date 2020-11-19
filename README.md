@@ -57,5 +57,5 @@ A powershell implementation
 A python implementation
 
 ```
-#> py Decode-JenkinsRawLog.py
+#> python3 Decode-JenkinsRawLog.py
 ```
